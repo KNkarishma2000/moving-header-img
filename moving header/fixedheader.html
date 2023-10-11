@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Moving/parellel scrolling  header</title>
+    </head>
+    <body>
+        <div class="sample-section-wrap">
+            <div class="sample-section">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab asperiores magnam,<br> dicta aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus asperiores <br>dolor corrupti neque inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab asperiores magnam, dicta<br> aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus asperiores dolor corrupti<br> neque inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+    
+
+            </p>
+            
+            
+            </div>
+        </div>
+        <!-- now we will create a image that will have parralel scrolling effect -->
+        <div class="sample-header">
+            <div class="sample-header-section">
+                <h1>scroll down to see the parallel effects</h1>
+            </div>
+        </div>
+        <!-- i just copied above content to add text below the image -->
+        <div class="sample-section-wrap">
+            <div class="sample-section">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab <br>asperiores magnam, dicta aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus<br> asperiores dolor corrupti neque inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+
+
+            </p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab<br> asperiores magnam, dicta aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus asperiores dolor corrupti neque<br> inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+
+            </div>
+        </div>
+        <div class="sample-section-wrap">
+            <div class="sample-section">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab <br>asperiores magnam, dicta aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus<br> asperiores dolor corrupti neque inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+
+
+            </p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam expedita voluptate fugit fugiat officia dolorum libero dignissimos ab<br> asperiores magnam, dicta aspernatur harum enim. Perferendis tempora aspernatur cumque dicta iusto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consequuntur reiciendis quisquam, tempore ducimus delectus asperiores dolor corrupti neque<br> inventore officiis nam qui atque nostrum dolorum odit at sit! Voluptatibus?
+
+            </div>
+        </div>
+        <!-- now lets style this with css -->
+
+        <style>
+        /* now we will adda imahe in background of header */
+            .sample-header{
+                position:relative;
+                /* now we will add width and height */
+                width:100%;
+                height:50vh;
+                background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+                background-position: center;
+                background-size: cover;
+                 background-attachment: fixed;/*this is for fixed backgrund */
+            }
+            .sample-header-section{
+                position:relative;
+                padding:15% 0 10%;
+                max-width:640px;
+                margin:0 auto;
+                color:white;  /*here we are adding text shadow */
+                text-shadow:  1px 1px 4px rgba(24, 21, 21, 0.5);
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+                 .sample-section-wrap{
+                    width:100%;
+
+                 }
+                 .sample-section{
+                    max-width:640px;
+                    margin:0 auto;
+                    padding:20px;
+                    background-color: white;
+                    margin-top:20vh;
+                    position:relative;
+                    /* if we remove z-index */
+                    /* z-index:1; */
+                 }
+                 /* now we ewill add some styles to sample section */
+        </style>
+     
+        <!-- did yu notice our image is moving when we scroll the page but then i shtops -->
+
+    </body>
+</html>
